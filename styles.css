@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+#input-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+input, select, button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#restaurant-list {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.restaurant-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.restaurant-item strong {
+    font-size: 18px;
+    color: #333;
+}
+.restaurant-item a {
+    text-decoration: none;
+    color: #007BFF;
+}
+.restaurant-item a:hover {
+    text-decoration: underline;
+}

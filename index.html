@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <!-- can sort restaurants based on driving distance/time
+   show user inputed location as blue marker
+   clears markers once user clicks Search -->
+  <head>
+    <title>Find Nearby Restaurants</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbjNTQMOrsrBoTyCkQJOLPBgS8YObeLek&libraries=places,geometry" async defer></script>
+
+</head>
+<body onload="initMap()">
+  <script src="script.js"></script>
+    <h1>Find Nearby Restaurants</h1>
+    <div>
+        <label for="location-input">Location:</label>
+        <input id="location-input" type="text" placeholder="Enter address or place">
+        <label for="type-input">Type: </label>
+        <input id="type-input" type="text" placeholder="Enter type of cuisine or name">
+        <label for="radius-input">Radius (miles):</label>
+        <input id="radius-input" type="number" placeholder="Enter radius (default 3)">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by">
+            <option value="time">Driving Time</option>
+            <option value="distance">Driving Distance</option>
+        </select>
+        <button onclick="findRestaurants()">Search</button>
+    </div>
+    <div id="map"></div>
+    <div id="restaurant-list"></div>
+</body>
+</html>
