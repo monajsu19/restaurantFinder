@@ -111,7 +111,7 @@ function displayRestaurants() {
     restaurants.forEach((restaurant) => {
         const place = restaurant.place;
         createMarker(place);
-g
+
         const listItem = document.createElement('div');
         listItem.className = 'restaurant-item';
         listItem.innerHTML = `
