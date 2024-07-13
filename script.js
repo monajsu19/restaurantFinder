@@ -43,7 +43,7 @@ function findRestaurants() {
             const request = {
                 location: location,
                 radius: radiusInMeters,
-                type: ['restaurant', 'bakery', 'bar', 'cafe']
+                type: ['restaurant']
             };
 
             if (typeInput) {
